@@ -1,6 +1,6 @@
 # activerecord-postgres_pub_sub
 
-## v2.3.0 (Unreleased)
+## v2.3.0
 - Add support for multi-database configurations.
 
 ## v2.2.0

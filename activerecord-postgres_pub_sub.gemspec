@@ -11,15 +11,10 @@ Gem::Specification.new do |spec|
   spec.email         = ["engineering@ezcater.com"]
   spec.summary       = "Support for Postgres Notify/Listen"
   spec.description   = spec.summary
-  spec.homepage      = "https://github.com/ezcater/activerecord-postgres_pub_sub"
+  spec.homepage      = "https://github.com/huntclub/activerecord-postgres_pub_sub-fork"
   spec.license       = "MIT"
-
-  # Set "allowed_push_post" to control where this gem can be published.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "https://rubygems.org"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
-  end
+  spec.metadata["github_repo"] = "ssh://github.com/huntclub/activerecord-postgres_pub_sub-fork"
+  spec.metadata["allowed_push_host"] = "https://rubygems.pkg.github.com/huntclub"
 
   excluded_files = %w(.circleci/config.yml
                       .github/PULL_REQUEST_TEMPLATE.md
