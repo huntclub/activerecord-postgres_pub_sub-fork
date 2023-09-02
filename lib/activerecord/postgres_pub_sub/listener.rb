@@ -15,12 +15,13 @@ module ActiveRecord
       def self.listen(*channels,
                       listen_timeout: nil,
                       exclusive_lock: true,
-                      notify_only: true
+                      notify_only: true,
                       active_record: ActiveRecord::Base)
         listener = new(*channels,
                        listen_timeout: listen_timeout,
                        exclusive_lock: exclusive_lock,
-                       notify_only: notify_only)
+                       notify_only: notify_only,
+                       active_record: active_record)
         yield(listener) if block_given?
         listener.listen
       end
@@ -34,6 +35,7 @@ module ActiveRecord
         @listen_timeout = listen_timeout
         @exclusive_lock = exclusive_lock
         @notify_only = notify_only
+        @active_record = active_record
       end
 
       def on_notify(&blk)
