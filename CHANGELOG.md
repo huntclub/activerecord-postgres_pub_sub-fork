@@ -1,5 +1,8 @@
 # activerecord-postgres_pub_sub
 
+## v2.3.0 (Unreleased)
+- Add support for multi-database configurations.
+
 ## v2.2.0
 - Add support for listening to multiple channels.
 
