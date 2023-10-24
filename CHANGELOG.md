@@ -1,6 +1,6 @@
 # activerecord-postgres_pub_sub
 
-## v2.4.0 (Unreleased)
+## v2.4.0
 - Add support for Rails 7.1
 
 ## v2.3.0
